@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Leaflet CSS - Required for maps */
+@import 'leaflet/dist/leaflet.css';
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+/* Custom styles for map */
+.leaflet-container {
+  @apply h-full w-full rounded-lg;
+}
+
+/* Custom marker styles */
+.crop-marker-healthy {
+  @apply bg-green-500 border-2 border-white rounded-full shadow-lg;
+}
+
+.crop-marker-stressed {
+  @apply bg-yellow-500 border-2 border-white rounded-full shadow-lg;
+}
+
+.crop-marker-damaged {
+  @apply bg-orange-500 border-2 border-white rounded-full shadow-lg;
+}
+
+.crop-marker-critical {
+  @apply bg-red-500 border-2 border-white rounded-full shadow-lg;
+}
+
+/* Animation for alerts */
+@keyframes pulse-alert {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.alert-pulse {
+  animation: pulse-alert 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+/* Card hover effect */
+.card-hover {
+  @apply transition-smooth hover:shadow-xl hover:-translate-y-1;
+}
+
