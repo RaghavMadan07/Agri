@@ -14,7 +14,7 @@ A comprehensive web dashboard for real-time crop image analytics under the Pradh
 ## 📸 Screenshots
 
 ### Main Dashboard
-![Dashboard Overview](Krishi-Sanrakshan/Sample_images/Home.png)
+![Dashboard Overview](Krishi-Sanrakshan/Sample_images/home.png)
 *Real-time statistics, interactive map, and recent activity feed*
 
 ### Crop Images Gallery
